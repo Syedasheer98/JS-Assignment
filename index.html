@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <input type="text" id="money" name="" placeholder="Enter a value">
+  <button id="btn">Convert to money</button><br>
+  <div id="output"></div>
+  <script type="text/javascript">
+  	var table = prompt("Enter any number");
+  	for(a = 1; a <=10; a++){
+  		document.write( "<br/>" + table + "*" + a + "=" + (a * table) + "<br/>" )
+  	}
+    function cToF(celsius) 
+{
+
+  // 8 Marks Sheet
+
+//Money Exchange..
+
+var b = document.getElementById("btn");
+    b.addEventListener("click",function(){
+      var m = document.getElementById("money").value;
+      var numUSD = Intl.NumberFormat("en-US",{
+        style:"currency",
+        currency:"USD"
+      })
+      document.getElementById("output").innerHTML = "the newly formatted number is " + numUSD.format(m);
+    })
+    "<br>"
+    //10
+    var k = 3;
+    var l = (5 + k * 10)/2;
+    document.write(l);
+
+    //Chap 2
+    var name = "username";
+  var username = "Syed Asheer "
+  alert( "Hello world \n" +"i m " + username  + "Ishtiaq");
+  var age = 21;
+  alert("i m " + age + " year old");
+  alert("Certified Mobile Application Development");
+  var i = "name";
+  // var name = "pizza"
+  str = "pizza"
+  for (var i = 1 ; i < str.length; i++) {
+    result = str.substr(0,i);
+    document.write( result + "<br>")
+  }
+   "<br>"
+   var a = "e-mail";
+   var email = "hafizsyedasheer595@gmail.com";
+   alert("My Email Address is " + email); "<br>"
+
+   //7
+   var b = "book";
+   var book =  " A Smarter way to learn java script";
+   alert("I m trying to learn from the book " + book);
+   //8
+   document.write("Yah " + "I can write HTML content through javascript" + "<br>");
+
+  //9
+  var c = "`````$$$``````";
+  alert(c)
+  // var str = "pizza"
+  // for ( var i = "1"; i <=5; i++) {
+  //  for (var j = i; j <= 5; j++) {
+  //    document.write(str );
+  //  }
+  //  document.write("<br>");
+  // }
+  //
+
+
+  //Chap 3
+
+  //1
+  var a = "age";
+  var age = 21;
+  alert( "I m " + age + " Year old ");
+
+  //3
+  var year = birthyear;
+  var birthyear = 1998;
+  document.write( "<br>" +"My birth year is " + birthyear + "<br>" + "Data type of my declared variable is number  " + "<br>" );
+  //4
+  var myname = "Asheer ";
+    var name = "shopname ";
+    var shopname = "Clothing store ";
+    var purchase = "Tshirts ";
+    document.write(myname  + "ordered " + purchase + "on " + shopname);
+
+    //Chap 4
+        var i = ",";  "_";  "$";
+    var $name = "Syed";
+    var _name = " Asheer";
+    var MyName = $name + _name;
+    document.write(MyName);
+
+    //Chap 5
+
+    //Task 1
+    var a = 2;
+      var b = 5;
+      var c = a + b;
+      document.write( "<br>" + " Sum of " + "2 " + "and 5 " + "is " + c );
+
+      //Task 2
+    //for Subtraction
+    var a = 5;
+    var b = 10;
+    var c = b - a;
+    document.write("<br>" + "subtract of " + "10 " + "into 5 is " + c );
+    //for Multiplication
+    var a = 10;
+    var b = 15;
+    var c = a * b;
+    document.write("<br>" + "Multiply " + "10 into 15 is " + c);
+    //for Division
+    var a = 9;
+    var b = 3;
+    var c = a / b;
+    document.write( "<br>" + "Devide " + "9 into 3 is " + c)
+    //for Modulus
+    var a = 10;
+    var b = 5;
+    var c = a % b;
+    document.write("<br>" + "The Modulus between 10 and 5 is " + c +"<br>");
+
+    //Task 3  
+    var l = 13;
+      for (var i = 5; i <= l; i++) {
+        document.write("value after increment is "  + i +"<br>");
+      }
+       "<br/>"
+       for (var i = 13 - 1; i >= 0; i--) {
+            document.write("value after decrement is "  + i +"<br>");
+        }
+
+        //Task 4
+        var CostOfOneTicket = 500;
+        document.write( "Total cost to buy 5 tickets  to a movie is " + CostOfOneTicket * 4 + "pkr");
+
+        //Task 5
+        //Table
+        var table = prompt("Enter any number");
+        for (var i = 1; i <= 10; i++) {
+          document.write("<br>" + table  + " *  " + i + " = " + i * table + "<br>");
+        }
+
+        //Task 6
+        //Temperatue Converter
+      function cToF(celsius){
+      var cTemp = celsius
+    var cToFahr = cTemp * 9 / 5 + 32;
+    var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+    document.write(message + "<br/>");
+    }
+    cToF(60);
+    function FToc(ferhenheit){
+    var fTemp = ferhenheit;
+    var fToC = (fTemp-32)*5/9;
+    var message  = fTemp + " c is " + fToC + "F";
+    document.write(message)
+    }
+    FToc(45);
+    // Task 7
+    //Shopping Cart
+    var PriceOfItemOne = 650;
+    var PriceOfItemTwo = 500;
+    var QuantitiyOfItemOne = 5;
+    var QuantitiyOfItemTwo = 10;
+    var ShppingCharges = "10$";
+    document.write( "<br>" + "Price of one Item is " + PriceOfItemOne + "<br>" + "Quantity of one Item is " + QuantitiyOfItemOne + "<br>" +  "Price of two Item is " + PriceOfItemTwo + "<br>" + "Quantity of two item is " + QuantitiyOfItemTwo + "<br>" + "Shipping charges " + ShppingCharges + "<br>"  );
+    var sum = (PriceOfItemTwo+PriceOfItemOne);
+    document.write("Total cost of your order is " + sum);
+
+    //Task 8
+    //Mark sheet
+      var Marks = 804;
+      var totalMarks = 1100;
+      var per = Marks/totalMarks*100;
+      Math.round(per);
+      document.write( "<br/>" + per  + "<br>");
+      "<br>"
+      //Task 9
+      //Currency
+      // var b = document.getElementById("btn");
+    // b.addEventListener("click",function(){
+    //   var m = document.getElementById("money").value;
+    //   var numUSD = Intl.NumberFormat("en-US",{
+    //     style:"currency",
+    //     currency:"USD"
+    //   })
+    //   document.getElementById("output").innerHTML = "the newly formatted number is " + numUSD.format(m);
+    // })
+    "<br>"
+
+      //Task 10
+      //Calculation
+       var k = 3;
+      var l = (5 + k * 10)/2;
+      document.write(l);
+
+      //Task 11
+      //Age Calculator
+      var year = "CurrentYear";
+      var CurrentYear = 2020;
+      var BirthYear = 1998;
+      var subtract = (CurrentYear - BirthYear);
+      document.write(subtract);
+
+      //Task 12
+      //The Geometizer
+      var RadiusOfCircle = 20;
+      var CircumferenceOfCircle = 2*(3.142)*20;
+      // alert(CircumferenceOfCircle);
+      var AreaOfCircle = 3.142 * 20 *2;
+      document.write( "<br>" + "Radius of a circle is " + RadiusOfCircle +  "<br>" + " The Circumference Of Circle is " +AreaOfCircle +  "<br>" + "The area of a Circle is " + AreaOfCircle );
+
+      //Task 13
+      //Calculator
+      var FavouriteSnack = "bravo";
+      var CurrentAge = 22;
+      var MaxiumAge = 70;
+      var AmountOfSnacksPerDay = 3;
+      document.write("<br>" + " You will need 150 chocolate chip to last you until the ripe old age of 65");
+
+//Chap 6-9
+
+    var a = 2;
+    document.write("Result" + "<br>" + "The value is: " + a + "<br>"+ "<br>" );
+    var a = ++a;
+    document.write( "The value of ++a is: " + a);
+    var a = a++;
+    document.write( "<br>" + "Now the value of a is: " + a  + "<br>"  + "<br>");
+    document.write("The value of a++ is: 11" + "<br>");
+    document.write("now the value is: 12" + "<br>" + "<br>");
+    document.write("The  value of --a is:" + 11 + "<br>");
+    document.write("Now the  value of --a is:" + 11 + "<br>" + "<br>");
+    document.write("The value of a-- is: 11" + "<br>");
+    document.write("Now the value of a: 10" + "<br>"+ "<br>");
+
+    //Task2
+    document.write("First a is -2 " + "<br>" + "Then b is -1 " + "<br>" + "Then value is 0 " + "<br> " + "In the end the value is 1 then decrement --"  + "<br>");
+
+    //Task3
+    var name = prompt("Enter name");
+    document.write(name + "<br>");
+
+    //Task3
+    // var table = prompt("Enter a number");
+    var b = 5;
+    var d = prompt("Enter any number");
+    for (var e = 1; e <= 10; e++) {
+        document.write(d + "*" + e + "=" + d*e);      
+    }
+    // if user d() {
+    //  document.write(d)
+    // }
+    // else{
+    //  document.write(b);
+    // }
+    for (var c = 1; c <= 10; c++) {
+      document.write(b + " * " + c + " = " + b*c + "<br>");
+    }
+
+    //Task6
+    var subj1 = prompt("Enter subject name");
+    var subj2 = prompt("Enter subject name");
+    var subj3= prompt("Enter subject name");
+    var Total = 100;
+    var ObtSub1 = prompt("Enter " + subj1 + "marks ");
+    var ObtSub1 = prompt("Enter " + subj2 + "marks ");
+    var ObtSub1 = prompt("Enter " + subj3 + "marks ");
+    document.write("<b>Subject Total Marks Obtained Marks percentage </b>"+ "<br>" + "English " + Total + subj1 + "55% " + "<br>" + "English " + Total + subj1 + "55% " + "<br>" + "English " + Total + subj1 + "55% " + "<br>");
+
+    //Chap 9-11
+    var k = prompt("Enter City Name");
+  if (k === "karachi") {
+    alert("Welcome to City Of Light")
+  }
+  else{
+    alert("Welcome to cleanest city")
+  }
+  var gender = prompt("Enter your gender");
+  if (gender = "male") {
+    alert("welcome sir")
+  }
+  else if (gender = "female") {
+    alert("Welcome Madam")
+  } else {
+    alert("Please verify your identity")
+  }
+
+  //Task 3
+  var arr = ["red", "blue", "green"]
+  var color = prompt("Enter color name (should be: red , blue , green)");
+  if(arr[0] = "red"){
+    document.write("Red" + " " + "must Stop" + "<br>" );
+  }
+   else if(arr[1] = "green"){
+    document.write("green" + " " + "must go" );
+
+  }
+  else if(arr[2] = "blue"){
+    document.write("Blue" + "Ready to go" )
+  }
+
+  //tASK4 
+  var fuel = +prompt( "Enter fuel");
+  if (fuel >= 4 && fuel < 0.25) {
+    document.write("Good to ride")
+  } else {
+    document.write("Fuel is to low")
+  }
+
+  //Task5
+  var a = 4;
+  if (++a === 5){
+    alert("Given condition of variable is true");
+
+  }
+  var MaterialCost = 2000;
+  var LabourCost = 2000;
+  var TotalCost = MaterialCost + LabourCost;
+  if (TotalCost === MaterialCost + LabourCost) {
+    alert("this is equal")
+  } else {
+    alert("this is not equal" + "<br>");
+
+  }
+
+  if ("car" < "cat") {
+    alert("car is smallest then cat")
+  } else {
+    alert("not smallest");
+  }
+
+  //MarkSheet
+  var name = prompt("Enter your name");
+  var level = prompt("Enter your class name");
+  var roll = prompt("Enter your roll number");
+  var Marksone = +prompt("Enter your English marks ");
+  var Markstwo = +prompt("Enter your urdu marks ");
+  var Marksthree = +prompt("Enter your math marks ");
+  var Marksfour = +prompt("Enter your physics marks ");
+  var Marksfive = +prompt("Enter your chemistry marks ");
+  var sum = (Marksone + Markstwo + Marksthree + Marksfour + Marksfive) ;
+  var percent = sum * 100 /500;
+  document.write("Your name " + name + "<br>");
+  document.write("your roll " + roll + "<br>");
+  document.write("your class " + level + "<br>");
+  document.write("your total marks is " + sum + "<br>");
+  // document.write("your percentage is " + percent  "%" + "<br>");
+
+  //Task 7
+  var secretNum = 5;
+  var num = prompt("enter a number");
+  if (num === 5) {
+    alert("Bingo");
+  } else {
+    ("close enough to the correct answer");
+  }
+
+
+//Chap 12-13
+  //Task 1
+  var a = prompt("enter hour")
+  var hour = 13;
+  if (hour < 18) {
+    alert("greeting = 'good day'")
+  } else {
+    alert("good evening")
+  }
+//Chap 14-16
+var arr1 = [];
+    var arr2 = ["valuable"];
+    // var arr3 = [0 , 1, 2];
+    // var arr4 = [abcd];
+    var arr = ["ssc", "hsc", "bcs", "bs"];
+    for (var i = 0; i < arr.length; i++) {
+      document.write( "<br>" + arr);
+    }
+    // document.write(arr[ ]);
+
+    //Task 8
+    var name = ["Ali", "Waleed", "Noman"]
+    var num = [320, 340, 380];
+    for (var i = 0; i < name.length; i++) {
+      console.log(i)
+      }
+      var per1 = 320/500*100;
+      var per2 = 340/500*100;
+      var per3 = 380/500*100;
+      document.write("<br>"+"Score of Ali is " +  num[0] + " " + "percentage is " + per1 + "%");
+      document.write("<br>"+"Score of Waleed is " +  num[1] + " " + "percentage is " + per2 + "%");
+      document.write("<br>"+"Score of Noman is " +  num[2] + " " + "percentage is " + per3 + "%" + "<br>" + "<br>");
+
+      //Task 9
+      var colorName = ["Red ", "Blue ", "Green "];
+      document.write("Chose the color name in colors " + "<br>")
+      for (var i = 0; i < colorName.length; i++) {
+        document.write( "<b>"+colorName[i]+"</b>");
+        var colorName = ["Red ", "Blue ", "Green "];
+      var user = prompt("Enter color name");
+      document.write("<br>" + user + " " +  colorName[i] + "<br>");
+      }
+      
+
+      //Tsk 10
+      var score = [320 , 230 , 480 , 120];
+      for (var i = 0; i < score.length; i++) {
+        document.write( "Score of students: " + " " + score[i] + "<br>");
+
+      }
+      document.write( " Order Score of students: "+ score.sort() + "<br>" + "<br>");
+
+      //Task 11
+      document.write( "<b>"+ "Cities List" + "</b>" + "<br>") 
+      var citiesName = ["Karachi ", "Islamabad ", "Lahore"];
+      for (var i = 0; i < citiesName.length; i++) {
+        document.write( citiesName[i]);
+      }
+      document.write( "<br/>"+"<b>" + "selected Cities List" + "</b>" + "<br/>")
+      var selectdCities = ["Karachi ", "Quetta "];
+      for (var i = 0; i < selectdCities.length; i++) {
+        document.write(selectdCities[i]);
+      }
+
+      //String
+      var name = ["This " , "is " , "my " , "Cat"];
+      // var new_name = name.join();
+      for (var i = 0; i < name.length; i++) {
+        document.write (name[i]);
+        
+      }
+
+      // 
+      // alert(name); 
+
+      //Task15
+      var store = ["Motorola " , "Huawie " , "Nokia " , "Samsung" ];
+      document.write("<br/>"+"<select>");
+      for (var i = 0; i < store.length; i++) {
+        document.write("<option>" + store[i] + "</option>") 
+      }
+      document.write("</select>");
+
+
+
+      //Chap 17-20
+
+
+  //Task  3
+  var num = 10;
+  for (var i = 1; i < num.length; i++) {
+     for (var j = 0; j < num.length; j++) {
+      document.write(j);
+     }
+    // document.write("<br>" + arr[i]);
+  }
+
+  //Tas3
+    var table = prompt("Enter any number for Table"); 
+    for (var e = 1; e <= 10; e++) {
+        document.write( "<br/>" + table + " * " + e + " = " + table*e);     
+    }
+
+    //Task
+    var length = prompt("Enter table Length");
+    for (var e = 1; e <= length.length; e++) {
+      if (length === length) {
+        document.write( "<br/>" + length + " * " + e + " = " + length*e);     
+
+      } else {
+
+      }
+    }
+  </script>
+</body>
+</html>
